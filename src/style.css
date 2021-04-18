@@ -20,6 +20,7 @@ body {
   display: flex;
   font-size: 15px;
   font-family: "Spartan", sans-serif;
+  isolation: isolate;
   justify-content: space-around;
 }
 
