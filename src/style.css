@@ -21,9 +21,7 @@ body {
   display: flex;
   font-size: 15px;
   font-family: "Spartan", sans-serif;
-  /* isolation: isolate; */
   justify-content: space-around;
-  /* mix-blend-mode: normal; */
 }
 
 .heading {
@@ -204,8 +202,19 @@ body {
   }
 
   .statement {
+    display: flex;
+    flex-direction: column;
     height: 235px;
+    justify-content: space-between;
+    margin: 0;
     width: 445px;
+  }
+
+  .heading {
+    font-size: 48px;
+    letter-spacing: -1.71px;
+    line-height: 48px;
+    margin: 0;
   }
 
   .ratings {
@@ -238,13 +247,6 @@ body {
 
   .stars {
     margin: 0 32px;
-  }
-
-  .heading {
-    font-size: 48px;
-    letter-spacing: -1.71px;
-    line-height: 48px;
-    margin-bottom: 6px;
   }
 
   .reviews {
