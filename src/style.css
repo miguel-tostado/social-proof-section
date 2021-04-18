@@ -53,6 +53,10 @@ body {
   color: var(--color-very-dark-magenta);
 }
 
+.stars img {
+  margin-right: 8.45px;
+}
+
 .rating {
   background-color: var(--color-light-grayish-magenta);
   padding: 16px 0;
