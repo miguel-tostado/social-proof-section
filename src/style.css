@@ -167,6 +167,7 @@ body {
     background-position: top left, bottom right;
     background-repeat: no-repeat;
     background-size: 584px 362px, 1085px 673px;
+    height: 100vh;
   }
 
   .main {
