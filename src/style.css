@@ -61,7 +61,7 @@ body {
 .stars {
   display: flex;
   height: 16px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 117px;
 }
 
