@@ -1,0 +1,248 @@
+:root {
+  --color-very-dark-magenta: hsl(300, 43%, 22%);
+  --color-soft-pink: hsl(333, 80%, 67%);
+  --color-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  justify-content: space-around;
+}
+
+.heading {
+  color: var(--color-very-dark-magenta);
+  font-weight: var(--fw-bold);
+}
+
+.body {
+  color: var(--color-dark-grayish-magenta);
+  line-height: 25px;
+  letter-spacing: -0.5px;
+}
+
+.body,
+.review-body {
+  font-weight: var(--fw-medium);
+}
+
+.rating-text,
+.review {
+  font-size: 13px;
+}
+
+.rating-text,
+.name {
+  font-weight: var(--fw-bold);
+}
+
+.rating-text {
+  color: var(--color-very-dark-magenta);
+}
+
+.rating {
+  background-color: var(--color-light-grayish-magenta);
+  padding: 16px 0;
+}
+
+.middle-rating {
+  margin: 16px auto;
+}
+
+.rating,
+.review {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.review {
+  background-color: var(--color-very-dark-magenta);
+  color: var(--color-white);
+  text-align: left;
+}
+
+.verified {
+  color: var(--color-soft-pink);
+}
+
+.review-body {
+  letter-spacing: -0.23px;
+  line-height: 22px;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+  width: 163px;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.icon {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 40px;
+}
+
+@media (min-width: 275px) {
+  body {
+    background-image: url(img/bg-pattern-top-mobile.svg),
+      url(img/bg-pattern-bottom-mobile.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .main {
+    height: 1351px;
+    margin: 80px 24px 99px;
+    text-align: center;
+    width: 327px;
+  }
+
+  .top-section {
+    margin-bottom: 49px;
+  }
+
+  .heading {
+    font-size: 32px;
+    letter-spacing: -1.14px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+
+  .statement {
+    margin-bottom: 40px;
+  }
+
+  .stars {
+    margin-bottom: 11.5px;
+  }
+
+  .review {
+    padding: 40px 32px 32px;
+  }
+
+  .middle-review {
+    margin: 16px auto;
+  }
+}
+
+@media (min-width: 376px) {
+  body {
+    background-size: calc(374px + 210 * ((100vw - 375px) / 1065))
+        calc(232px + 130 * ((100vw - 375px) / 1065)),
+      100% 673px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(img/bg-pattern-top-desktop.svg),
+      url(img/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 584px 362px, 1085px 673px;
+  }
+
+  .main {
+    height: 573px;
+    margin: 127px 165px 100px;
+    text-align: left;
+    width: 1110px;
+  }
+
+  .top-section {
+    display: flex;
+    height: 235px;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+
+  .statement {
+    height: 235px;
+    width: 445px;
+  }
+
+  .ratings {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    width: 540px;
+  }
+
+  .rating {
+    display: flex;
+    height: 56px;
+    margin: 0;
+    padding: 20px 0;
+    width: 445px;
+  }
+
+  .middle-rating {
+    align-self: center;
+  }
+
+  .bottom-rating {
+    align-self: flex-end;
+  }
+
+  .stars {
+    margin: 0 32px;
+  }
+
+  .heading {
+    font-size: 48px;
+    letter-spacing: -1.71px;
+    line-height: 48px;
+    margin-bottom: 6px;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    height: 266px;
+    justify-content: space-between;
+  }
+
+  .review {
+    height: 234px;
+    margin: 0;
+    padding: 40px 32px;
+    width: 350px;
+  }
+
+  .middle-review {
+    align-self: center;
+  }
+
+  .bottom-review {
+    align-self: flex-end;
+  }
+}
