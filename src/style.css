@@ -53,17 +53,16 @@ body {
   color: var(--color-very-dark-magenta);
 }
 
-.stars img {
-  margin-right: 8.45px;
-}
-
 .rating {
   background-color: var(--color-light-grayish-magenta);
-  padding: 16px 0;
+  display: flex;
 }
 
-.middle-rating {
-  margin: 16px auto;
+.stars {
+  display: flex;
+  height: 16px;
+  justify-content: space-evenly;
+  width: 117px;
 }
 
 .rating,
@@ -143,8 +142,21 @@ body {
     margin-bottom: 40px;
   }
 
-  .stars {
-    margin-bottom: 11.5px;
+  .ratings {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 266px;
+    justify-content: space-between;
+    width: 327px;
+  }
+
+  .rating {
+    align-items: center;
+    flex-direction: column;
+    height: 78px;
+    justify-content: space-evenly;
+    width: 100%;
   }
 
   .review {
@@ -195,7 +207,6 @@ body {
 
   .ratings {
     align-self: center;
-    display: flex;
     flex-direction: column;
     height: 200px;
     justify-content: space-between;
@@ -203,11 +214,15 @@ body {
   }
 
   .rating {
-    display: flex;
     height: 56px;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 0;
-    padding: 20px 0;
     width: 445px;
+  }
+
+  .top-rating {
+    align-self: flex-start;
   }
 
   .middle-rating {
