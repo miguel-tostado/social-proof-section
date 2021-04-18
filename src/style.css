@@ -179,8 +179,8 @@ body {
 
 @media (min-width: 1440px) {
   body {
-    background-image: url(img/bg-pattern-top-desktop.svg),
-      url(img/bg-pattern-bottom-desktop.svg);
+    background-image: url(./img/bg-pattern-top-desktop.svg),
+      url(./img/bg-pattern-bottom-desktop.svg);
     background-position: top left, bottom right;
     background-repeat: no-repeat;
     background-size: 584px 362px, 1085px 673px;
