@@ -21,9 +21,9 @@ body {
   display: flex;
   font-size: 15px;
   font-family: "Spartan", sans-serif;
-  isolation: isolate;
+  /* isolation: isolate; */
   justify-content: space-around;
-  mix-blend-mode: normal;
+  /* mix-blend-mode: normal; */
 }
 
 .heading {
@@ -116,8 +116,8 @@ body {
 
 @media (min-width: 275px) {
   body {
-    background-image: url(/img/bg-pattern-top-mobile.svg),
-      url(/img/bg-pattern-bottom-mobile.svg);
+    background-image: url(./img/bg-pattern-top-mobile.svg),
+      url(./img/bg-pattern-bottom-mobile.svg);
     background-position: top left, bottom right;
     background-repeat: no-repeat;
     background-size: contain;
